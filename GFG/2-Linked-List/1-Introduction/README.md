@@ -456,7 +456,7 @@ So, it becomes important that we should always keep in mind the __positive__ and
 
 # 3. Applications, Advantages and Disadvantages of Linked List
 
-A Linked List is a __linear data structure__ that is used to store a collection of data with the help of nodes. A linked list is made up of two items that are data and a reference to the next node. A reference to the next node is given with the help of __pointers__ and data is the value of a node. Each node contains data and links to the other nodes. It is an ordered collection of data elements called a node and the linear order is maintained by pointers. It has an upper hand over the array as the number of nodes i.e. the size of the linked list is not fixed and can grow and shrink as and when required, unlike arrays. Some of the features of the linked list are as follows:
+A Linked List is a __linear data structure__ that is used to store a collection of data with the help of nodes. A linked list is made up of two items that are data and a reference to the next node. A reference to the next node is given with the help of __pointers__ and __data__ is the value of a node. Each node contains data and links to the other nodes. It is an ordered collection of data elements called a node and the linear order is maintained by pointers. It has an upper hand over the array as the number of nodes i.e. the size of the linked list is not fixed and can grow and shrink as and when required, unlike arrays. Some of the features of the linked list are as follows:
 
 - The consecutive elements are connected by pointers.
 - The size of a linked list is not fixed.
@@ -474,16 +474,16 @@ A Linked List is a __linear data structure__ that is used to store a collection 
 ### Linked Lists are most commonly used for:
 
 - Linked Lists are mostly used because of their effective insertion and deletion. 
-- Insertion and deletion in the linked list are very effective and take less time complexity as compared to the array data structure.
-- This data structure is simple and can be also used to implement a stack, queues, and other abstract data structures.
+- __Insertion__ and __deletion__ in the linked list are very effective and take less __time complexity__ as compared to the __array__ data structure.
+- This data structure is simple and can be also used to implement a __stack__, __queues__, and other __abstract data structures__.
 
 ### Applications of Linked Lists:
 
-- Linked Lists are used to implement stacks and queues.
-- It is used for the various representations of trees and graphs.
+- Linked Lists are used to implement __stacks__ and __queues__.
+- It is used for the various representations of __trees__ and __graphs__.
 - It is used in __dynamic memory allocation__( linked list of free blocks).
 - It is used for representing __sparse matrices__.
-- It is used for the manipulation of polynomials.
+- It is used for the manipulation of __polynomials__.
 - It is also used for performing arithmetic operations on long integers.
 - It is used for finding paths in networks.
 - In operating systems, they can be used in Memory management, process scheduling and file system.
@@ -525,31 +525,87 @@ __Array:__ _Arrays_ store elements in contiguous memory locations, resulting in 
 __Here is the representation of the array in C++:__
 
 ```cpp
+//c++ program to illustrate arrays in C++
 
+#include <iostream> // header file for taking input and producing output
+using namespace std;
+ 
+int main()
+{
+    int arr[4]= {1,3,5,3};//initializing an array of size 4
+ 
+    cout << arr[3] << " ";//gives the element at index 3
+    cout << arr[2] << " ";//gives the element at index 2
+ 
+    return 0;
+}
 ```
 
 ```yml
 Output: 3 5 
 ```
 
-__Time Complexity:__ O(1).
+__Time Complexity:__ O(1)
+
 __Auxiliary Space:__ O(1)
 
-Explanation: In the above example we have created an array of size 4 and then accessed the elements using cout of index 3 and 2.
+Explanation: In the above example we have created an array of size 4 and then accessed the elements using __`cout`__ of index 3 and 2.
 
 __Linked List:__ Linked lists are less rigid in their storage structure and elements are usually not stored in contiguous locations, hence they need to be stored with additional tags giving a reference to the next element. 
 
 ![Linked List](../images/Linkedlist.png)
 
 ```cpp
-
+// Linked list implementation in C++
+ 
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+ 
+// Creating a node
+class Node {
+public:
+    int value;
+    Node* next;
+};
+ 
+int main()
+{
+    Node* head;
+    Node* one = NULL;
+    Node* two = NULL;
+    Node* three = NULL;
+ 
+    // allocate 3 nodes in the heap
+    one = new Node();
+    two = new Node();
+    three = new Node();
+ 
+    // Assign value values
+    one->value = 1;
+    two->value = 2;
+    three->value = 3;
+ 
+    // Connect nodes
+    one->next = two;
+    two->next = three;
+    three->next = NULL;
+ 
+    // print the linked list value
+    head = one;
+    while (head != NULL) {
+        cout << head->value;
+        head = head->next;
+    }
+}
 ```
 
 ```yml
 Output: 123
 ```
 
-__Time Complexity:__ O(1).
+__Time Complexity:__ O(1)
+
 __Auxiliary Space:__ O(1)
 
 Explanation: All the struct nodes has a data item and it contains a pointer to the next __`struct node`__. It took us only a few steps to create a linked list of three nodes(one, two and three). At first we allocated the nodes and then we assigned values to the node. After assigning the value we connected the nodes from one to next and at the end using while loop printed the entire linked list.
@@ -574,11 +630,14 @@ In the case of linked list nodes are dependent on each other. one node is depend
 
 __Example:__
 
-```yml
-suppose we maintain a sorted list of IDs in an array id[ ] = [1000, 1010, 1050, 2000, 2040, …..]. 
-And if we want to insert a new ID 1005, then to maintain the sorted order, we have to move all the elements after 1000 (excluding 1000). 
-Deletion is also expensive with arrays unless some special techniques are used. For example, to delete 1010 in id[], everything after 1010 has to be moved.
+suppose we maintain a sorted list of IDs in an array 
+
+```cpp
+id[ ] = [1000, 1010, 1050, 2000, 2040, …..]. 
 ```
+And if we want to insert a new ID 1005, then to maintain the sorted order, we have to move all the elements after 1000 (excluding 1000). 
+
+Deletion is also expensive with arrays unless some special techniques are used. For example, to delete 1010 in `id[]`, everything after 1010 has to be moved.
 
 __So Linked list provides the following two advantages over arrays:__
 
