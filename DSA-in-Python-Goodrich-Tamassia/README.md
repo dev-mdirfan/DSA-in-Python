@@ -1,4 +1,6 @@
-# Python Primer
+# DSA in Python
+
+To promote the development of robust and reusable software, we have tried to take a consistent object-oriented viewpoint throughout this text. One of the main ideas of the object-oriented approach is that data should be presented as being encapsulated with the methods that access and modify them. That is, rather than simply viewing data as a collection of bytes and addresses, we think of data objects as instances of an __abstract data type (ADT)__, which includes a repertoire of methods for performing operations on data objects of this type.
 
 ## Table of Contents
 

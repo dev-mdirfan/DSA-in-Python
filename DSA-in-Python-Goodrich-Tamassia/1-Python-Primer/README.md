@@ -36,7 +36,7 @@
 # 1.1 Python Overview
 
 - To accomplish any task by a computer we require communication with computer, by building data structures and algorithms we communicate detailed instructions to a computer.
-- An excellent way to perform such communication is using high-level language, such as **Python**.
+- An excellent way to perform such communication is using high-level computer language, such as **Python**.
 - The Python programming language was originally developed by **Guido van Rossum** in early **1990s**, and has since become a prominently used language in industry and education.
 - The second major version of the language, **Python 2**, was released in  **2000**.
 - The third major version, **Python 3**, released in **2008**.
@@ -57,12 +57,11 @@
 ### 1. Comments
 
 - Comments are annotations provided for human readers, yet ignored by Python interpreter.
-- The primary syntax for comments in Python is based on use of the `#` character, which designates the remainder of the line as a comment.
+- The primary syntax for comments in Python is based on use of the __`#`__ character, which designates the remainder of the line as a comment.
 
 ### 2. Delimiter
 
 - Delimiter is a sequence of one or more characters used to specify the boundary between separate.
-- Individual statements are typically concluded with a newline character, although a command can extend to another line, either with a concluding backslash character (\\), or if an opening **delimiter** has not yet been closed, such as the `{` character in defining ***value_map***.
 - Whitespace is also key in **delimiting** the bodies of control structures in Python.
 - Specifically, a block of code is intended to designate it as the body of a control structure, and nested control structures use increasing amounts of **indentation**.
 
@@ -71,6 +70,7 @@
 - Python's syntax relies heavily on the use of white space.
 - It refers to the spaces at the beginning of a code line.
 - Python uses indentation(Tab) to indicate a block of code for every particular reserved words in Python.
+- Individual statements are typically concluded with a newline character, although a command can extend to another line, either with a concluding backslash character (__`\`__), or if an opening **delimiter** has not yet been closed, such as the __`{`__ character in defining ***value_map***.
 
 #### Code Fragment 1.1: A Python program that computes a GPA
 
@@ -104,24 +104,26 @@ while not done:
         print('Your GPA is {0: .3}'.format(total_points / num_courses))
 ```
 
-**Input :** A+
+```yml
+Input :
+A+
+C-
+D
 
-
-**Output :**
-
-```output
+Output :
 Welcome to the GPA calculator.
-Please enter all your letter grade, one per line,
+Please enter all your letter grades, one per line.
 Enter a blank line to designate the end.
-Your GPA is 4.0
+Your GPA is  4.0
+Your GPA is  2.83
+Your GPA is  2.22
+Your GPA is  2.22
 ```
 
 # 1.2 Objects
 
 - Python is an object-oriented language and **classes** from the basis for all data types.
-- Python has built-in classes, such as the `int` class for integers.
-- The `float` class for floating-point values,
-- and the `str` class for character strings.
+- Python has built-in classes, such as the __`int`__ class for integers, the __`float`__ class for floating-point values, and the __`str`__ class for character strings.
 
 ## 1.2.1 Identifiers, Objects and the Assignment Statement
 
@@ -131,7 +133,7 @@ Your GPA is 4.0
 temperature = 98.6
 ```
 
-- This command establishes temperature as an identifier (also known as name), and then associates it with the **object** expressed on the right-hand side of the equal sign, in this case a floating-point object with value 98.6.
+- This command establishes temperature as an __identifier__ (also known as __name__), and then associates it with the **object** expressed on the right-hand side of the equal sign, in this case a floating-point object with value 98.6.
 
 |float|
 |---|
@@ -144,10 +146,9 @@ temperature
 
 ### 1. Identifier
 
-- Identifiers in Python are case sensitive.
-- so temperature and Temperature are distinct names.
-- Identifier can be composed of almost any combination of letters, numerals, and underscore characters (or more general Unicode characters).
-- The primary restriction are that an identifier cannot begin with a numeral (thus 9lives is an illegal name).
+- Identifiers in Python are __case-sensitive__. so temperature and Temperature are distinct names.
+- Identifier can be composed of almost any combination of letters, numerals, and underscore characters (or more general _Unicode_ characters).
+- The primary restriction are that an identifier cannot begin with a numeral (thus __9lives__ is an __illegal__ name).
 - There are 33 specially reserved words that cannot be used as identifiers.
 
 **Table 1.1:** A list of the reserved words in Python. These names cannot be used as identifier.

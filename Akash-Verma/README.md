@@ -1,5 +1,9 @@
 # Akash Verma
 
+- [Akash Verma](#akash-verma)
+  - [Backtracking](#backtracking)
+
+
 ## Backtracking
 
 1. __Permutations in a string:__ [Solution](programs/1-permutations-of-string.py), [Notes](#)

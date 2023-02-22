@@ -85,6 +85,28 @@ Follow the steps to add a node after a given node:
 ![Linked List insert at middle](../images/Linkedlist_insert_middle.png)
 
 ```py
+# Insert a node after given a node
+class Node:
+    def __init__(self, data) -> None:
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self) -> None:
+        self.head = None
+        self.tail = None
+    
+    def insertAfter(self, given_node, new_data):
+        new_node = Node(new_data)
+        temp = given_node.next
+        given_node.next = new_node
+        new_node.next = temp
+
+```
+
+__or__
+
+```py
 # Insert node at middle
 
 class Node:
@@ -120,6 +142,54 @@ __Auxiliary Space:__ O(1) since using constant space to modify pointers
 ![Inset Last](../images/Linkedlist_insert_last.png)
 
 Following are the 6 steps to add a node at the end.
+
+```py
+#  Insert a node in the end of the linked list
+
+class Node:
+    def __init__(self, data) -> None:
+        self.data = data
+        self.next = None
+    
+class LinkedList:
+    def __init__(self) -> None:
+        self.head = None
+        self.tail = None
+    
+    def insertEnd(self, data):
+        new_node = Node(data)
+        temp = self.head
+        
+        while temp.next != None:
+            temp = temp.next
+        
+        temp.next = new_node
+```
+
+__OR__
+
+```py
+# Insert at the end of the linked list
+
+class Node:
+    def __init__(self, data) -> None:
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def insertEnd(self, data):
+        new_node = Node(data)
+        
+        if self.head is None:
+            self.head = new_node
+            return
+        
+        last = self.head
+        while last.next:
+            last = last.next
+        last.next = new_node
+```
+
 
 
 
