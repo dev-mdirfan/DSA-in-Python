@@ -1,3 +1,6 @@
+# Introduction
+
+- [Introduction](#introduction)
 - [1. Introduction to Graph](#1-introduction-to-graph)
   - [Components of a Graph](#components-of-a-graph)
   - [Types Of Graph](#types-of-graph)
