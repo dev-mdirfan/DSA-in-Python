@@ -162,9 +162,9 @@ In this method, the graph is stored in the form of the 2D matrix where rows and 
 
 ![Adjacency Matrix](../images/adjacency_mat1.jpg)
 
-2. Adjacency Matrix
+2. Adjacency List
 
-In this method, the graph is stored in the form of the 2D matrix where rows and columns denote vertices. Each entry in the matrix represents the weight of the edge between those vertices.
+This graph is represented as a collection of linked lists. There is an array of pointer which points to the edges connected to that vertex. 
 
 ![Adjacency List](../images/adjacency_list.jpg)
 
