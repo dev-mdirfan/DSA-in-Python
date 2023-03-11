@@ -285,7 +285,9 @@ An array of lists is used. The size of the array is equal to the number of verti
 
 ![Adjacency List](../images/listadjacency.png)
 
-Note that in the below implementation, we use dynamic arrays (vector in C++/ArrayList in Java) to represent adjacency lists instead of the linked list. The vector implementation has advantages of cache friendliness. 
+Note that in the below implementation, we use dynamic arrays (vector in C++/ArrayList in Java) to represent adjacency lists instead of the linked list. The vector implementation has advantages of cache friendliness.
+
+- [Print Adjacency List - GFG Practice](https://practice.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article)
 
 ```py
 # A class represents the adjacency list of the node
