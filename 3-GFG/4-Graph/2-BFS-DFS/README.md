@@ -1,3 +1,23 @@
+# BFS and DFS
+
+- [BFS and DFS](#bfs-and-dfs)
+- [1. Breadth First Search for a Graph](#1-breadth-first-search-for-a-graph)
+	- [Implementation of BFS traversal on Graph:](#implementation-of-bfs-traversal-on-graph)
+	- [BFS for Disconnected Graph:](#bfs-for-disconnected-graph)
+	- [Problems related to BFS:](#problems-related-to-bfs)
+	- [Applications of BFS:](#applications-of-bfs)
+	- [Advantages of Breadth First Search:](#advantages-of-breadth-first-search)
+	- [Disadvantages of Breadth First Search:](#disadvantages-of-breadth-first-search)
+- [2. Depth First Search for a Graph](#2-depth-first-search-for-a-graph)
+	- [Handling A Disconnected Graph:](#handling-a-disconnected-graph)
+	- [Advantages of Depth First Search:](#advantages-of-depth-first-search)
+	- [Disadvantages of Depth First Search:](#disadvantages-of-depth-first-search)
+	- [Applications of DFS.](#applications-of-dfs)
+- [3. Applications of Depth First Search](#3-applications-of-depth-first-search)
+- [4. Applications of Breadth First Traversal](#4-applications-of-breadth-first-traversal)
+- [5. Iterative Depth First Traversal of Graph](#5-iterative-depth-first-traversal-of-graph)
+
+
 # 1. Breadth First Search for a Graph
 
 The breadth-first search (BFS) algorithm is used to search a tree or graph data structure for a node that meets a set of criteria. It starts at the tree’s root or graph and searches/visits all nodes at the current depth level before moving on to the nodes at the next depth level. Breadth-first search can be used to solve many problems in graph theory.
