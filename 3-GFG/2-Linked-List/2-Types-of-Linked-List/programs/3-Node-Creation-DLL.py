@@ -1,7 +1,0 @@
-# Structure of DLL
-
-class Node:
-    def __init__(self, data) -> None:
-        self.data = data
-        self.next = None
-        self.previous = None

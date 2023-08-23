@@ -1,1 +1,0 @@
-# 2. Introduction and Insertion in a Doubly Linked List

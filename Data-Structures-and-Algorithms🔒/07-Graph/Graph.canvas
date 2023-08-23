@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"type":"file","file":"Leetcode/Leetcode Reference☑️/1-Topic-Wise/2-Graph/2.1-Adjacency-List.md","id":"b4443714e3c33d93","x":-180,"y":-20,"width":763,"height":798,"color":"1"},
+		{"type":"file","file":"Leetcode/Leetcode Reference☑️/1-Topic-Wise/2-Graph/2.2-BFS.md","id":"0e80707e18a9e546","x":-1240,"y":-20,"width":760,"height":980,"color":"1"},
+		{"type":"file","file":"Leetcode/Leetcode Reference☑️/1-Topic-Wise/2-Graph/images/AdjList-Output.png","id":"517b0dddeb5d82ba","x":-180,"y":960,"width":763,"height":332,"color":"6"},
+		{"type":"text","text":"# Understand Graph\n\n## Graph Representation\nv = 6\nedges = `[[1, 2], [1, 4], [1, 5], [2, 3], [2, 4], [3, 4], [3, 6], [4, 5], [5, 6]]`\n\n![[2.1-Drawing-AdjacencyList]]","id":"59294fbe981f7f19","x":980,"y":120,"width":718,"height":538,"color":"3"}
+	],
+	"edges":[
+		{"id":"0af1e5b83736d56f","fromNode":"b4443714e3c33d93","fromSide":"right","toNode":"59294fbe981f7f19","toSide":"left","color":"3","label":"Graph Representation"},
+		{"id":"f769849e691d3a46","fromNode":"b4443714e3c33d93","fromSide":"bottom","toNode":"517b0dddeb5d82ba","toSide":"top","color":"6","label":"Output"}
+	]
+}
