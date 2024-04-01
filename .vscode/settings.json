@@ -76,6 +76,7 @@
     "*.css.liquid": "liquid-css",
     "*.scss.liquid": "liquid-scss",
     "*.html": "html",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "ostream": "cpp"
   },
 }
